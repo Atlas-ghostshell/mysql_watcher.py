@@ -4,7 +4,10 @@ import re import time import subprocess from pathlib import Path
 
 === CONFIGURATION ===
 
-MYSQL_LOG_PATH = "/var/log/mysql/mysql.log"  # Adjust path if different ALERT_EMAIL_TO = "muriukigeoffrey472@gmail.com" ALERT_EMAIL_FROM = "muriukigeoffrey472@gmail.com" MSMTP_CONFIG_PATH = "/etc/msmtprc"  # Ensure this path is correct and accessible ALERT_LOG = "/var/log/mysql-alerts.log"
+MYSQL_LOG_PATH = "/var/log/mysql/mysql.log"  # Adjust path if different 
+ALERT_EMAIL_TO = "your_account@gmail.com" 
+ALERT_EMAIL_FROM = "your_account@gmail.com" 
+MSMTP_CONFIG_PATH = "/etc/msmtprc"  # Ensure this path is correct and accessible ALERT_LOG = "/var/log/mysql-alerts.log"
 
 === FUNCTION TO SEND EMAIL USING MSMTP ===
 
